@@ -387,31 +387,31 @@ nav {
 .insight-item h4 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
 .insight-item p  { font-size: 13px; color: var(--muted); line-height: 1.8; }
 
-/* ── PRIZES ── */
-.prize-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-.prize-card {
+/* ── Covered TracksS ── */
+.Covered Tracks-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.Covered Tracks-card {
   background: var(--dark2); border: 1px solid var(--border);
   border-radius: 20px; padding: 32px;
   position: relative; overflow: hidden;
 }
-.prize-card::before {
+.Covered Tracks-card::before {
   content: ''; position: absolute; inset: 0;
   background: linear-gradient(135deg, rgba(124,92,252,.05) 0%, transparent 60%);
   pointer-events: none;
 }
-.prize-track {
+.Covered Tracks-track {
   font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
   color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 6px;
 }
-.prize-track .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
-.prize-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
-.prize-card p  { font-size: 13px; color: var(--muted); line-height: 1.8; }
-.prize-card ul { margin-top: 14px; list-style: none; }
-.prize-card ul li {
+.Covered Tracks-track .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.Covered Tracks-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+.Covered Tracks-card p  { font-size: 13px; color: var(--muted); line-height: 1.8; }
+.Covered Tracks-card ul { margin-top: 14px; list-style: none; }
+.Covered Tracks-card ul li {
   font-size: 12px; color: var(--muted); padding: 5px 0;
   display: flex; align-items: center; gap: 8px;
 }
-.prize-card ul li::before { content: '·'; color: var(--accent); font-size: 18px; line-height: 0; }
+.Covered Tracks-card ul li::before { content: '·'; color: var(--accent); font-size: 18px; line-height: 0; }
 
 /* ── DEMO ── */
 .demo-section { background: var(--dark2); }
@@ -516,7 +516,7 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .prob-grid, .solution-grid, .agent-layout, .tech-grid,
-  .market-stat-grid, .prize-grid, .why-grid,
+  .market-stat-grid, .Covered Tracks-grid, .why-grid,
   .dash-grid, .market-insight {
     grid-template-columns: 1fr;
   }
@@ -546,7 +546,7 @@ footer {
       <a href="#how">How it works</a>
       <a href="#tech">Stack</a>
       <a href="#market">Market</a>
-      <a href="#prizes">Prizes</a>
+      <a href="#Covered Trackss">Covered Trackss</a>
     </div>
     <a href="#cta" class="nav-cta">View Demo →</a>
   </div>
@@ -1007,17 +1007,17 @@ footer {
 </section>
 
 
-<!-- ─── PRIZES ─────────────────────────────────────────── -->
-<section class="section-sm" id="prizes" style="background:var(--dark2)">
+<!-- ─── Covered TracksS ─────────────────────────────────────────── -->
+<section class="section-sm" id="Covered Trackss" style="background:var(--dark2)">
   <div class="container">
     <div class="label">Hackathon Coverage</div>
     <h2 class="section-title">Built to win four tracks</h2>
     <p class="section-sub">
       Every sponsor's technology is deeply integrated — not bolted on for the submission.
     </p>
-    <div class="prize-grid">
-      <div class="prize-card">
-        <div class="prize-track"><div class="dot"></div>Track 1 — Primary</div>
+    <div class="Covered Tracks-grid">
+      <div class="Covered Tracks-card">
+        <div class="Covered Tracks-track"><div class="dot"></div>Track 1 — Primary</div>
         <h3>AI Video Agents</h3>
         <p>End-to-end AI video pipeline deployed and generating real MP4s. Vision model reads listing photos, Seedance renders cinematic footage, ffmpeg burns in timed captions and AI voiceover.</p>
         <ul>
@@ -1027,8 +1027,8 @@ footer {
           <li>Butterbase file storage for image hosting</li>
         </ul>
       </div>
-      <div class="prize-card">
-        <div class="prize-track"><div class="dot" style="background:var(--accent2)"></div>Photon Spectrum</div>
+      <div class="Covered Tracks-card">
+        <div class="Covered Tracks-track"><div class="dot" style="background:var(--accent2)"></div>Photon Spectrum</div>
         <h3>iMessage Integration</h3>
         <p>Full spectrum-ts SDK integration for live iMessage streaming. The agent handles multi-turn qualification conversations, sends listing video links, and fires automated reminders.</p>
         <ul>
@@ -1038,8 +1038,8 @@ footer {
           <li>Cron-based showing reminders (24h + 1h)</li>
         </ul>
       </div>
-      <div class="prize-card">
-        <div class="prize-track"><div class="dot" style="background:var(--teal)"></div>Cumulus Labs / IonRouter</div>
+      <div class="Covered Tracks-card">
+        <div class="Covered Tracks-track"><div class="dot" style="background:var(--teal)"></div>Cumulus Labs / IonRouter</div>
         <h3>GLM-5 Multi-modal</h3>
         <p>IonRouter powers four distinct AI workloads through a single OpenAI-compatible API key — text, vision, voice, and video generation.</p>
         <ul>
@@ -1049,8 +1049,8 @@ footer {
           <li>Voice: TTS voiceover for videos</li>
         </ul>
       </div>
-      <div class="prize-card">
-        <div class="prize-track"><div class="dot" style="background:var(--gold)"></div>Butterbase</div>
+      <div class="Covered Tracks-card">
+        <div class="Covered Tracks-track"><div class="dot" style="background:var(--gold)"></div>Butterbase</div>
         <h3>DB + Storage + Hosting</h3>
         <p>Butterbase is the backbone of the entire data layer — Postgres for all relational data, object storage for listing images, and serverless function hosting for the API.</p>
         <ul>
